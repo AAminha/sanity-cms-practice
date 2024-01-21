@@ -6,12 +6,14 @@ import person from './person'
 import screening from './screening'
 import plotSummary from './plotSummary'
 import plotSummaries from './plotSummaries'
+import department from './department'
 
 export const schemaTypes = [
   // Document types
   movie,
   person,
   screening,
+  department,
 
   // Other types
   blockContent,
