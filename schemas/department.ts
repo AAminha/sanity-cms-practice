@@ -12,5 +12,20 @@ export default defineType({
       name: 'basicInformation',
       type: 'informationContent',
     }),
+    defineField({
+      name: 'task',
+      title: '부서 업무',
+      type: 'blockContent',
+    }),
+    defineField({
+      name: 'ideal',
+      title: '인재상',
+      type: 'blockContent',
+    }),
+    defineField({
+      name: 'experience',
+      title: '추천 경험',
+      type: 'blockContent',
+    }),
   ],
 })
