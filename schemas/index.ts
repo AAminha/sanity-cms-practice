@@ -7,6 +7,7 @@ import screening from './screening'
 import plotSummary from './plotSummary'
 import plotSummaries from './plotSummaries'
 import department from './department'
+import informationContent from './informationContent'
 
 export const schemaTypes = [
   // Document types
@@ -21,4 +22,5 @@ export const schemaTypes = [
   plotSummaries,
   castMember,
   crewMember,
+  informationContent,
 ]
