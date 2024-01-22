@@ -1,4 +1,4 @@
-import blockContent from './blockContent'
+import blockContent2 from './blockContent2'
 import crewMember from './crewMember'
 import castMember from './castMember'
 import movie from './movie'
@@ -8,6 +8,7 @@ import plotSummary from './plotSummary'
 import plotSummaries from './plotSummaries'
 import department from './department'
 import informationContent from './informationContent'
+import blockContent from './blockContent'
 
 export const schemaTypes = [
   // Document types
@@ -18,6 +19,7 @@ export const schemaTypes = [
 
   // Other types
   blockContent,
+  blockContent2,
   plotSummary,
   plotSummaries,
   castMember,

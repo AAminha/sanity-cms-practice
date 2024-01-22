@@ -24,7 +24,7 @@ export default defineType({
     defineField({
       name: 'overview',
       title: 'Overview',
-      type: 'blockContent',
+      type: 'blockContent2',
     }),
     defineField({
       name: 'releaseDate',
@@ -60,6 +60,12 @@ export default defineType({
       title: 'Crew Members',
       type: 'array',
       of: [{type: 'crewMember'}],
+    }),
+    defineField({
+      name: 'crewMembers1',
+      title: 'Crew Members1',
+      type: 'array',
+      of: [{type: 'plotSummaries'}],
     }),
   ],
   preview: {
