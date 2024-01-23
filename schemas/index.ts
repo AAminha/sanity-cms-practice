@@ -9,6 +9,7 @@ import plotSummaries from './plotSummaries'
 import department from './department'
 import informationContent from './informationContent'
 import blockContent from './blockContent'
+import applyStep from './applyStep'
 
 export const schemaTypes = [
   // Document types
@@ -25,4 +26,5 @@ export const schemaTypes = [
   castMember,
   crewMember,
   informationContent,
+  applyStep,
 ]

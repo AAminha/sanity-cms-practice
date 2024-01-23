@@ -27,5 +27,11 @@ export default defineType({
       title: '추천 경험',
       type: 'blockContent',
     }),
+    defineField({
+      name: 'applyProcedure',
+      title: '지원 절차',
+      type: 'array',
+      of: [{type: 'applyStep'}],
+    }),
   ],
 })
