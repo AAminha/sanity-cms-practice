@@ -33,5 +33,11 @@ export default defineType({
       type: 'array',
       of: [{type: 'applyStep'}],
     }),
+    defineField({
+      name: 'roadToPro',
+      title: '로드 투 프로',
+      type: 'array',
+      of: [{type: 'videoInformation'}],
+    }),
   ],
 })

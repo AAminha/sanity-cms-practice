@@ -10,6 +10,7 @@ import department from './department'
 import informationContent from './informationContent'
 import blockContent from './blockContent'
 import applyStep from './applyStep'
+import videoInformation from './videoInformation'
 
 export const schemaTypes = [
   // Document types
@@ -27,4 +28,5 @@ export const schemaTypes = [
   crewMember,
   informationContent,
   applyStep,
+  videoInformation,
 ]
