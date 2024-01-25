@@ -15,17 +15,17 @@ export default defineType({
     defineField({
       name: 'task',
       title: '부서 업무',
-      type: 'blockContent',
+      type: 'defaultContent',
     }),
     defineField({
       name: 'ideal',
       title: '인재상',
-      type: 'blockContent',
+      type: 'defaultContent',
     }),
     defineField({
       name: 'experience',
       title: '추천 경험',
-      type: 'blockContent',
+      type: 'defaultContent',
     }),
     defineField({
       name: 'applyProcedure',
@@ -42,20 +42,13 @@ export default defineType({
     defineField({
       name: 'inaWord',
       title: '한 마디',
-      type: 'object',
-      fields: [
-        defineField({
-          name: 'title',
-          title: '제목',
-          type: 'string',
-        }),
-        defineField({
-          name: 'content',
-          title: '내용',
-          type: 'text',
-          description: '소개 페이지에서 줄바꿈도 반영됩니다. 이를 고려해서 작성해주세요.',
-        }),
-      ],
+      type: 'inaWordContent',
     }),
   ],
+  preview: {
+    select: {
+      title: 'basicInformation.name',
+      media: 'basicInformation.icon',
+    },
+  },
 })

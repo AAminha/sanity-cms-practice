@@ -17,6 +17,7 @@ export default defineType({
       name: 'name',
       title: '부서 이름',
       type: 'string',
+      description: '영어로 입력해주세요.',
     }),
     defineField({
       name: 'short_introduction',
