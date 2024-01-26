@@ -19,6 +19,12 @@ export default defineType({
       type: 'string',
       description: '영어로 입력해주세요.',
     }),
+    // 임시방편
+    defineField({
+      name: 'departmentLink',
+      title: '부서 링크',
+      type: 'string',
+    }),
     defineField({
       name: 'short_introduction',
       title: '간단 소개',
