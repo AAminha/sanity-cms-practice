@@ -21,5 +21,15 @@ export default defineType({
       title: 'step',
       subtitle: 'schedule',
     },
+    prepare(selection) {
+      const {title, subtitle} = selection
+      const checkInformation = title && subtitle
+
+      return {
+        title: title,
+        subtitle: subtitle,
+        media: checkInformation ? <span style={{fontSize: '1.2rem'}}>✅</span> : <span>❌</span>,
+      }
+    },
   },
 })
