@@ -10,7 +10,7 @@ export default defineType({
       type: 'string',
     }),
     defineField({
-      name: 'inaWord',
+      name: 'word',
       title: '한마디',
       type: 'string',
     }),
