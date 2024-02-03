@@ -6,9 +6,9 @@ export default defineType({
   type: 'object',
   fields: [
     defineField({
-      name: 'presenter_name',
-      title: '발표자 이름',
-      type: 'string',
+      name: 'video_thumbnail',
+      title: '영상 썸네일',
+      type: 'image',
     }),
     defineField({
       name: 'presenter_nickname',
@@ -16,26 +16,21 @@ export default defineType({
       type: 'string',
     }),
     defineField({
-      name: 'video',
-      title: '영상',
-      type: 'file',
+      name: 'presenter_name',
+      title: '발표자 이름',
+      type: 'string',
+    }),
+    defineField({
+      name: 'video_link',
+      title: '영상 링크',
+      type: 'url',
     }),
   ],
   preview: {
     select: {
       title: 'presenter_nickname',
       subtitle: 'presenter_name',
-      video: 'video',
-    },
-    prepare(selection) {
-      const {title, subtitle, video} = selection
-      const checkInformation = title && subtitle && video
-
-      return {
-        title: title,
-        subtitle: subtitle,
-        media: checkInformation ? <span style={{fontSize: '1.2rem'}}>✅</span> : <span>❌</span>,
-      }
+      media: 'video_thumbnail',
     },
   },
 })
